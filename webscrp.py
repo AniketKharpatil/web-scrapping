@@ -6,8 +6,6 @@ htm_text=requests.get(URL)
 soup=BeautifulSoup(htm_text.content,"lxml")
 alljobs=soup.find_all("li",class_="clearfix job-bx wht-shd-bx")
 
-
-# no more of use as not sorted ==>print(jobs)
 #cuz company name is inside hr tag inside li
 #<h3 class="joblist-comp-name">
 #   Larsen &amp; Toubro Infotech Ltd
